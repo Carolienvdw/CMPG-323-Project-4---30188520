@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="914,11106" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="914,14528" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="38">
       <x:String>System.Activities</x:String>
@@ -107,7 +107,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="860,11041" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="860,14463" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="ZoneTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="DeviceTable" />
@@ -125,7 +125,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This opens the browser al logs the user in" BrowserType="Chrome" DisplayName="Open Connecedoffice browser" sap:VirtualizedContainerService.HintSize="798,1073" sap2010:WorkflowViewState.IdRef="OpenBrowser_5" Url="https://connectedoffice-devicemanagement.azurewebsites.net/">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="This opens the browser al logs the user in" BrowserType="Chrome" DisplayName="Open Connecedoffice browser" sap:VirtualizedContainerService.HintSize="798,1033" sap2010:WorkflowViewState.IdRef="OpenBrowser_5" Url="https://connectedoffice-devicemanagement.azurewebsites.net/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -343,13 +343,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ZoneTable]" DisplayName="For Each Row in ZoneTable" sap:VirtualizedContainerService.HintSize="798,3745" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ZoneTable]" DisplayName="For Each Row in ZoneTable" sap:VirtualizedContainerService.HintSize="798,3316" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="656,3619" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="656,3190" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -379,19 +379,19 @@
                 <InArgument x:TypeArguments="x:String">[Row.item(2).ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Zones'" sap:VirtualizedContainerService.HintSize="594,3167" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="9485c060643ea27dd9ae0b4788f5bb45" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Zones'" sap:VirtualizedContainerService.HintSize="594,2738" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="9485c060643ea27dd9ae0b4788f5bb45" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="560,3011" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence sap:VirtualizedContainerService.HintSize="560,2582" sap2010:WorkflowViewState.IdRef="Sequence_16">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,2889" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,2460" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -510,13 +510,13 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="436,601" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(zoneID)).ToList]">
+                      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Test Zone Create and view" sap:VirtualizedContainerService.HintSize="436,62" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(zoneID)).ToList]">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="ZoneCreateAndView" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,467" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,302" sap2010:WorkflowViewState.IdRef="Sequence_21">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -538,14 +538,13 @@
                                   <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:WriteRange AddHeaders="False" DataTable="[TestResultsTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="338,125" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Test Results" StartingCell="B2" WorkbookPath="C:\Users\Lenovo User\Documents\Project-4---30188520\Connected Office Test Data.xlsx" />
                             </Sequence>
                           </ActivityAction>
                         </ui:ForEach.Body>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ForEach>
@@ -649,21 +648,29 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="436,326" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(zoneID)).ToList]">
+                      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Test Zone Edit and Delete" sap:VirtualizedContainerService.HintSize="436,436" sap2010:WorkflowViewState.IdRef="ForEach`1_14" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(zoneID)).ToList]">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="ZoneView" />
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="ZoneEditAndDelete" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,192" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,302" sap2010:WorkflowViewState.IdRef="Sequence_29">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_15">
+                              <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_22">
                                 <Assign.To>
-                                  <OutArgument x:TypeArguments="x:Object">[ZoneView("Read Test Passed")]</OutArgument>
+                                  <OutArgument x:TypeArguments="x:Object">[ZoneEditAndDelete("Update Test Passed")]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Object">[ZoneEditAndDelete("Delete Test Passed")]</OutArgument>
                                 </Assign.To>
                                 <Assign.Value>
                                   <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
@@ -744,13 +751,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CategoryTable]" DisplayName="For Each Row in CategoriesTable" sap:VirtualizedContainerService.HintSize="798,62" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CategoryTable]" DisplayName="For Each Row in CategoriesTable" sap:VirtualizedContainerService.HintSize="798,3568" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="594,3222" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="594,3442" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="CategoryID" />
               <Variable x:TypeArguments="x:String" Name="CategoryName" />
@@ -785,13 +792,13 @@
                 <InArgument x:TypeArguments="x:String">[Row.Item(2).ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Home'" sap:VirtualizedContainerService.HintSize="532,2770" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="88fa21d3a7a0a9357348c04e4c6b9051" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Home'" sap:VirtualizedContainerService.HintSize="532,2990" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="88fa21d3a7a0a9357348c04e4c6b9051" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,2614" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,2834" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -865,30 +872,6 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="436,326" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(categoryID)).ToList]">
-                      <ui:ForEach.Body>
-                        <ActivityAction x:TypeArguments="sd:DataRow">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CategoryCreate" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,192" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_16">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="x:Object">[CategoryCreate("Create Test Passed")]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:ForEach.Body>
-                    </ui:ForEach>
                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Categories'" sap:VirtualizedContainerService.HintSize="436,116" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
@@ -933,21 +916,29 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="436,326" sap2010:WorkflowViewState.IdRef="ForEach`1_9" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(categoryID)).ToList]">
+                    <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Test Category Create and Update" sap:VirtualizedContainerService.HintSize="436,436" sap2010:WorkflowViewState.IdRef="ForEach`1_15" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(categoryID)).ToList]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CategoryView" />
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CategoryCreateAndView" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,192" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,302" sap2010:WorkflowViewState.IdRef="Sequence_30">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_17">
+                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_24">
                               <Assign.To>
-                                <OutArgument x:TypeArguments="x:Object">[CategoryView("Read Test Passed")]</OutArgument>
+                                <OutArgument x:TypeArguments="x:Object">[CategoryCreateAndView("Create Test Passed")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_25">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[CategoryCreateAndView("Read Test Passed")]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
                                 <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
@@ -956,6 +947,12 @@
                           </Sequence>
                         </ActivityAction>
                       </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Categories/Edit/13c...'" sap:VirtualizedContainerService.HintSize="436,116" sap2010:WorkflowViewState.IdRef="Click_26" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
@@ -1057,12 +1054,50 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
+                    <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Test Category Edit and Delete" sap:VirtualizedContainerService.HintSize="436,436" sap2010:WorkflowViewState.IdRef="ForEach`1_16" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(categoryID)).ToList]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CategoryEditAndDelete" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,302" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_26">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[CategoryEditAndDelete("Update Test Passed")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_27">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[CategoryEditAndDelete("Delete Test Passed")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
                   </Sequence>
                 </ActivityAction>
               </ui:BrowserScope.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -1072,8 +1107,8 @@
       </ui:ForEachRow.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
@@ -1121,19 +1156,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DeviceTable]" DisplayName="For Each Row in DeviceTable" sap:VirtualizedContainerService.HintSize="798,4848" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DeviceTable]" DisplayName="For Each Row in DeviceTable" sap:VirtualizedContainerService.HintSize="798,5068" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="764,4722" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence sap:VirtualizedContainerService.HintSize="764,4942" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="702,4600" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="702,4820" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="DeviceID" />
                 <Variable x:TypeArguments="x:String" Name="DeviceName" />
@@ -1192,19 +1227,19 @@
                   <InArgument x:TypeArguments="x:Boolean">[Convert.ToBoolean(Row.Item(5))]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Devices'" sap:VirtualizedContainerService.HintSize="640,3818" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="3aafcb203f4388770f20553045047e02" Selector="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Devices'" sap:VirtualizedContainerService.HintSize="640,4038" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="3aafcb203f4388770f20553045047e02" Selector="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="606,3662" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <Sequence sap:VirtualizedContainerService.HintSize="606,3882" sap2010:WorkflowViewState.IdRef="Sequence_20">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="544,3540" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="544,3760" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1349,6 +1384,7 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </Sequence>
@@ -1376,30 +1412,6 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="482,326" sap2010:WorkflowViewState.IdRef="ForEach`1_12" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(deviceID)).ToList]">
-                          <ui:ForEach.Body>
-                            <ActivityAction x:TypeArguments="sd:DataRow">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="DeviceCreate" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,192" sap2010:WorkflowViewState.IdRef="Sequence_25">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_18">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:Object">[DeviceCreate("Create Test Passed")]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                              </Sequence>
-                            </ActivityAction>
-                          </ui:ForEach.Body>
-                        </ui:ForEach>
                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Devices'" sap:VirtualizedContainerService.HintSize="482,116" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
@@ -1422,30 +1434,6 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="482,326" sap2010:WorkflowViewState.IdRef="ForEach`1_13" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(deviceID)).ToList]">
-                          <ui:ForEach.Body>
-                            <ActivityAction x:TypeArguments="sd:DataRow">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="DeviceView" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,192" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_19">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:Object">[DeviceView("Read Test Passed")]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                              </Sequence>
-                            </ActivityAction>
-                          </ui:ForEach.Body>
-                        </ui:ForEach>
                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="482,116" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
@@ -1468,6 +1456,44 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
+                        <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Test Device Create and View" sap:VirtualizedContainerService.HintSize="482,436" sap2010:WorkflowViewState.IdRef="ForEach`1_17" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(deviceID)).ToList]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="sd:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="DeviceCreateAndView" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,302" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[DeviceCreateAndView("Create Test Passed")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[DeviceCreateAndView("Read Test Passed")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEach>
                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Devices/Edit/6883af...'" sap:VirtualizedContainerService.HintSize="482,116" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
@@ -1568,13 +1594,51 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
+                        <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Test device edit and delete" sap:VirtualizedContainerService.HintSize="482,436" sap2010:WorkflowViewState.IdRef="ForEach`1_18" Values="[TestResultsTable.AsEnumerable.Where(Function (x) x(&quot;ID&quot;).ToString().Trim().StartsWith(deviceID)).ToList]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="sd:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="DeviceEditAndDelete" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,302" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[DeviceEditAndDelete("Update Test Passed")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[DeviceEditAndDelete("Delete Test Passed")]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">["TRUE"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEach>
                       </Sequence>
                     </Sequence>
                   </ActivityAction>
                 </ui:BrowserScope.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -1590,5 +1654,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
+    <ui:WriteRange AddHeaders="False" DataTable="[TestResultsTable]" DisplayName="Write  Update test values" sap:VirtualizedContainerService.HintSize="798,125" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="Test Results" StartingCell="A2" WorkbookPath="C:\Users\Lenovo User\Documents\Project-4---30188520\Connected Office Test Data.xlsx" />
   </Sequence>
 </Activity>
